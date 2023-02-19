@@ -21,7 +21,7 @@ a:focus, a:hover {
 header {
 	padding: 1.5em 0 2em 0;
 	border-bottom: 3px solid #931420;
-	background-image: -moz-linear-gradient(
+		background-image: -moz-linear-gradient(
 	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 	background-image: -webkit-linear-gradient(
 	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
@@ -45,26 +45,6 @@ header img {
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
-
-/* the styles for the article */
-article {
-	padding: .5em 0;
-	border-top: 2px solid #800000;
-	border-bottom: 2px solid #800000;
-}
-article h2 {
-	padding-top: 0;
-}
-article h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
-}
-article img {
-	float: right;
-	margin: .5em 0 1em 1em;
-	border: 1px solid black;
-}
-
 /* the styles for the section */
 section {
 	width: 525px;
@@ -73,13 +53,14 @@ section {
 }
 section h1 {
 	font-size: 150%;
-	padding: .5em 0 .25em 0;
+	padding: .5em 0 0 0;
 	margin: 0;
+	color: #800000;
 }
 section h2 {
-	color: #800000;
-	font-size: 130%;
-	padding: .5em 0 .25em 0;
+	color: black;
+	font-size: 120%;
+	padding: 0 0 .25em 0;
 }
 section p {
 	padding-bottom: .5em;
@@ -93,6 +74,23 @@ section ul {
 }
 section li {
 	padding-bottom: .35em;
+}
+
+/* the styles for the article */
+article {
+	padding: .5em 0;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+article img {
+	float: right;
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
 }
 
 /* the styles for the aside */
@@ -118,6 +116,7 @@ aside img {
 footer {
 	background-color: #931420;
 	clear: both;
+
 }
 footer p {
 	text-align: center;
