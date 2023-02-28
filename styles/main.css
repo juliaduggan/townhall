@@ -45,7 +45,6 @@ header img {
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
-
 /* the styles for the navigation menu */
 #nav_menu ul {
 	list-style-type: none;
@@ -147,6 +146,7 @@ aside h2 {
 	font-size: 130%;
 	padding: .5em 0 .25em 0;
 }
+
 aside h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
@@ -165,4 +165,47 @@ footer p {
 	text-align: center;
 	color: white;
 	padding: 1em 0;
+}
+
+@media only screen and (max-width: 734px) {
+	section h1 {
+		font-size: 125%
+	}
+	section h2, aside h2 {
+		font-size: 110%;
+	}
+	aside h3 a {
+		font-size: 85%;
+	}
+}
+
+@media only screen and (max-width: 648px) {
+	header img { float: none; }
+	header { text-align: center; }
+	section {
+		float: none;
+		width: 95%;
+	}
+	aside {
+		float: none;
+		padding-right: 2.5%;
+		width: 95%;
+	}
+	article img { max-width: 30%; }
+	#speakers {
+		column-count: 2;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #800000 !important;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	body { font-size: 90%; }
 }
