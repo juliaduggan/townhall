@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>San Joaquin Valley Town Hall</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/speaker.css">
+  </head>
+  <body>
+    <header>
+      <img src="images/town_hall_logo.gif" alt="Town Hall logo" height="80">
+      <h2>San Joaquin Valley Town Hall</h2>
+      <h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
+    </header>
+    <nav id="nav_menu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="luncheons.html">Luncheons</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+        <li>
+          <a href="aboutus.html"> About Us</a>
+          <ul>
+            <li><a href="#">Our History</a></li>
+            <li><a href="#">Board of Directors</a></li>
+            <li><a href="#">Past Speakers</a></li>
+            <li><a href="#">Contact Information</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h1>jQuery Image Swaps</h1>
+        <ul id="image_list">
+          <li><a href="#" data-image="images/brancaccio75.jpg" data-caption="David Brancaccio">
+            <img src="images/brancaccio75.jpg" alt=""></a></li>
+          <li><a href="#" data-image="images/sorkin75.jpg" data-caption="Andrew Ross Sorkin">
+            <img src="images/sorkin75.jpg" alt=""></a></li>
+          <li><a href="#" data-image="images/chua75.jpg" data-caption="Amy Chua">
+            <img src="images/chua75.jpg" alt=""></a></li>
+          <li><a href="#" data-image="images/sampson75.jpg" data-caption="Scott Sampson">
+            <img src="images/sampson75.jpg" alt=""></a></li>
+        </ul>
+        <img id="image" src="images/brancaccio_EEC.jpg" alt="">
+        <p id="caption">David Brancaccio</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentYear"></span>, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="javascript/image_swap.js"></script>
+    <script>
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
